@@ -1,5 +1,16 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Cursor agent
+
+在项目根目录创建 `.env.local`（该文件已被 git 忽略）：
+
+```
+CURSOR_API_KEY=
+CURSOR_MODEL=composer-2.5
+```
+
+`CURSOR_API_KEY` 必填。到 [Cursor Dashboard → Integrations](https://cursor.com/dashboard/integrations) 创建用户 API Key，粘贴时不要带首尾空格。`CURSOR_MODEL` 可选，不填时使用 `composer-2.5`。
+
 ## Getting Started
 
 First, run the development server:
